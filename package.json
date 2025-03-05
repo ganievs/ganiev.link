@@ -1,6 +1,7 @@
 {
   "name": "blog",
   "description": "Build a personal website, blog, or portfolio with Astro.",
+  "packageManager": "yarn@4.1.1",
   "cloudflare": {
     "label": "Astro Framework Starter",
     "products": [
