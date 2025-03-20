@@ -5,7 +5,7 @@ export const GLOBAL = {
   title: "Read It Later",
   username: "Shamil Ganiev",
   rootUrl: "https://ganiev.link",
-  shortDescription: "Personal Toughts, Links, and Projects",
+  shortDescription: "Toughts, Links, and Projects",
   longDescriptipn: "Hi there! My name is Shamil. I’m an engineer focused on DevOps and Internal Developer Platforms. Welcome to my personal blog!",
 
   // Social media links
