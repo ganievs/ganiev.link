@@ -9,6 +9,8 @@ timestamp: 2025-08-15T18:39:03+00:00
 filename: tmux
 ---
 
+![Tmux](/assets/tmux.png)
+
 There’s no shortage of guides on how to master Tmux and make it shine - so
 instead of rehashing everything, I’ll focus on the essentials that work best for
 me.
@@ -91,6 +93,8 @@ bind % split-window -h -c "#{pane_current_path}"
 [Sesh](https://github.com/joshmedeski/sesh) is my secret weapon for jumping
 between Tmux sessions, configs, and directories with fuzzy search. With one
 keybinding, I get a beautiful popup with all my workspaces:
+
+![Sesh](/assets/sesh.png)
 
 ```tmux
 # Sesh popup bindings
