@@ -31,7 +31,7 @@ export const processContentInDir = async <T extends object, K>(
     if (contentType === "projects") {
       const content = import.meta
         .glob(`/src/pages/projects/*.md`)
-        [`/src/pages/projects/${file}.md`]();
+      [`/src/pages/projects/${file}.md`]();
       const data = (await content) as {
         frontmatter: T;
         file: string;
@@ -41,7 +41,7 @@ export const processContentInDir = async <T extends object, K>(
     } else {
       const content = import.meta
         .glob(`/src/pages/blog/*.md`)
-        [`/src/pages/blog/${file}.md`]();
+      [`/src/pages/blog/${file}.md`]();
       const data = (await content) as {
         frontmatter: T;
         file: string;
@@ -90,3 +90,22 @@ export const generateSourceUrl = (
 ) => {
   return `${GLOBAL.rootUrl}/${contentType}/${sourceUrl}`;
 };
+
+/**
+ * Represents a joke structure with setup and punchline
+ */
+export type Joke = {
+  setup: string;
+  punchline: string;
+};
+
+/**
+ * Fetches a random programming joke from the Official Joke API.
+ * @returns A promise that resolves to a joke object containing setup and punchline
+ */
+export const getNewJoke = (): Promise<Joke> =>
+  fetch(
+    'https://official-joke-api.appspot.com/jokes/programming/random',
+  )
+    .then(res => res.json())
+    .then(data => (Array.isArray(data) ? data[0] : data));
