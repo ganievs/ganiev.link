@@ -18,10 +18,11 @@ me.
 ## 🛠 Plugin Powerhouse
 
 I use TPM (Tmux Plugin Manager) to install and manage plugins. My must-haves:
-•	tmux-sensible – A set of sane defaults so I don’t have to reinvent the wheel.
-•	vim-tmux-navigator – Seamless pane navigation between tmux and Vim with hjkl.
-•	tmux-yank – Easy copy to system clipboard. •	catppuccin/tmux – Beautiful
-themed status bar and window styling.
+
+- tmux-sensible - A set of sane defaults so I don’t have to reinvent the wheel.
+- vim-tmux-navigator – Seamless pane navigation between tmux and Vim with hjkl.
+- tmux-yank – Easy copy to system clipboard.
+- catppuccin/tmux – Beautiful themed status bar and window styling.
 
 ## 🎨 True Color & Terminal Tweaks
 
@@ -35,15 +36,19 @@ set-option -ga terminal-overrides ',xterm-*:Tc'
 
 ## ⚡ Fast, No-Nonsense Workflow
 
-    •	Kill panes instantly:
+- Kill panes instantly:
 
-`bind-key x kill-pane` removes the confirmation prompt.
+```tmux
+bind-key x kill-pane # removes the confirmation prompt.
+```
 
-    •	Stay in tmux after closing a session:
+- Stay in tmux after closing a session:
 
-`set -g detach-on-destroy off`
+```tmux
+set -g detach-on-destroy off
+```
 
-    •	Reload config instantly with prefix + r:
+- Reload config instantly with prefix + r:
 
 ```tmux
 bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded."
@@ -51,11 +56,11 @@ bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded."
 
 ## 🪟 Splits & Navigation
 
-    •	Horizontal split: v
-    •	Vertical split: b
-    •	hjkl for Vim-style pane navigation.
-    •	Alt + Arrow keys to switch panes without the tmux prefix.
-    •	Shift + Arrow or Shift + Alt + H/L to switch windows.
+- Horizontal split: v
+- Vertical split: b
+- hjkl for Vim-style pane navigation.
+- Alt + Arrow keys to switch panes without the tmux prefix.
+- Shift + Arrow or Shift + Alt + H/L to switch windows.
 
 I also start panes/windows at 1 instead of 0:
 
@@ -112,11 +117,17 @@ bind-key "o" run-shell "sesh connect \"$(
 )\""
 ```
 
-Here’s how it works: •	Press Ctrl+B and o → Opens fzf-tmux in a popup (55% width
-× 60% height). •	Use Tab/Shift+Tab to navigate. •	Switch categories with
-shortcuts: •	Ctrl+A → All sessions •	Ctrl+T → Tmux sessions •	Ctrl+G → Configs
-•	Ctrl+X → Zoxide bookmarks •	Ctrl+F → Directory search with fd •	Ctrl+D → Kill
-tmux sessions directly from the menu
+Here’s how it works:
+
+- Press Ctrl+B and o → Opens fzf-tmux in a popup (55% width x 60% height).
+- Use Tab/Shift+Tab to navigate.
+- Switch categories with shortcuts:
+  - Ctrl+A → All sessions
+  - Ctrl+T → Tmux sessions
+  - Ctrl+G → Configs
+  - Ctrl+X → Zoxide bookmarks
+  - Ctrl+F → Directory search with fd
+  - Ctrl+D → Kill tmux sessions directly from the menu
 
 This means I can jump from “debugging a Kubernetes pod” to “editing a code” in
 seconds, all inside tmux.
@@ -138,7 +149,7 @@ back where you left off.
 ## 💭 Final Thoughts
 
 With a handful of smart plugins, a few quality-of-life keybindings, and the
-magic of popups and Sesh, tmux becomes more than just a multiplexer — it’s a
+magic of popups and Sesh, tmux becomes more than just a multiplexer - it’s a
 personalized productivity cockpit.
 
 The best part is that it grows with you. You can start small and keep layering
