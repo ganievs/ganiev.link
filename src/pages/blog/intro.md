@@ -15,7 +15,7 @@ Hello and welcome! I am delighted to kick off this blog as a place to share my
 thoughts, experiences, and insights on open source, DevOps, DX, and IDP
 development.
 
-This blog is far more than a one-way conversation — I warmly invite your
+This blog is far more than a one-way conversation - I warmly invite your
 engagement! Should you have any thoughts, questions, or suggestions, please feel
 free to reach out, as I am always open to enriching discussions, constructive
 feedback, and collaborative opportunities.

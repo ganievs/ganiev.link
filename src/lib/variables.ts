@@ -5,7 +5,7 @@ export const GLOBAL = {
   title: "Read It Later",
   username: "Shamil Ganiev",
   rootUrl: "https://ganiev.link",
-  shortDescription: "Toughts, Links, and Projects",
+  shortDescription: "Thoughts, Links, and Projects",
   longDescriptipn: "Hi there! My name is Shamil. I’m an engineer focused on DevOps and Internal Developer Platforms. Welcome to my personal blog!",
 
   // Social media links
@@ -23,7 +23,7 @@ export const GLOBAL = {
 
   // Blog metadata
   blogTitle: "Read It Later",
-  blogShortDescription: "Personal Toughts, Links, and Projects",
+  blogShortDescription: "Personal Thoughts, Links, and Projects",
   blogLongDescriptipn: "Hi there! My name is Shamil. I’m an engineer focused on DevOps and Internal Developer Platforms. Welcome to my personal blog!",
 
   // Project metadata
