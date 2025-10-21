@@ -5,7 +5,7 @@ description: A Model Context Protocol (MCP) server that provides tools for inter
 tags: ["mcp", "todoist", "open-source"]
 githubUrl: https://github.com/ganievs/todoist-mcp-server
 timestamp: 2025-08-21T19:39:03+00:00
-featured: true
+featured: false
 filename: todoist-mcp-server
 ---
 
