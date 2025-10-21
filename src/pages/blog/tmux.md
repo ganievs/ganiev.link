@@ -28,7 +28,7 @@ I use TPM (Tmux Plugin Manager) to install and manage plugins. My must-haves:
 
 This makes a big difference when using themes like Catppuccin.
 
-```tmux
+```ini
 set -g default-terminal "screen-256color"
 set-option -sa terminal-features ',xterm-*:RGB'
 set-option -ga terminal-overrides ',xterm-*:Tc'
@@ -38,19 +38,19 @@ set-option -ga terminal-overrides ',xterm-*:Tc'
 
 - Kill panes instantly:
 
-```tmux
+```ini
 bind-key x kill-pane # removes the confirmation prompt.
 ```
 
 - Stay in tmux after closing a session:
 
-```tmux
+```ini
 set -g detach-on-destroy off
 ```
 
 - Reload config instantly with prefix + r:
 
-```tmux
+```ini
 bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded."
 ```
 
@@ -64,7 +64,7 @@ bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded."
 
 I also start panes/windows at 1 instead of 0:
 
-```tmux
+```ini
 set -g base-index 1
 set -g pane-base-index 1
 ```
@@ -73,13 +73,13 @@ set -g pane-base-index 1
 
 Mouse mode makes resizing and selecting easier:
 
-```tmux
+```ini
 set -g mouse on
 ```
 
 For macOS clipboard sync:
 
-```tmux
+```ini
 bind-key C-c run-shell 'tmux save-buffer - | reattach-to-user-namespace pbcopy'
 bind-key C-v run-shell 'reattach-to-user-namespace pbpaste | tmux load-buffer - \; paste-buffer -d'
 ```
@@ -88,7 +88,7 @@ bind-key C-v run-shell 'reattach-to-user-namespace pbpaste | tmux load-buffer - 
 
 New splits open in the current pane’s working directory:
 
-```tmux
+```ini
 bind '"' split-window -v -c "#{pane_current_path}"
 bind % split-window -h -c "#{pane_current_path}"
 ```
@@ -101,7 +101,7 @@ keybinding, I get a beautiful popup with all my workspaces:
 
 ![Sesh](/assets/sesh.png)
 
-```tmux
+```ini
 # Sesh popup bindings
 bind-key "o" run-shell "sesh connect \"$(
   sesh list --icons | fzf-tmux -p 55%,60% \
@@ -136,7 +136,7 @@ seconds, all inside tmux.
 
 The other secret weapon in my tmux config: fullscreen-like popups for CLI apps.
 
-```tmux
+```ini
 bind-key h display-popup -E -w 80% -h 80% "htop"
 bind-key g display-popup -E -w 80% -h 80% "gitui"
 bind-key k display-popup -E -w 80% -h 80% "k9s"
